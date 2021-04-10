@@ -16,17 +16,6 @@ $(window).on('load',function(){
 });
 
 
-$(window).on('load',function(){	
-    //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
-    $("#splash").delay(50).fadeOut('slow',function(){//ローディングエリア（splashエリア）を0.05秒でフェードアウトする記述
-    
-        $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
-	
-    });
-    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる    
-});
-
-
 $(".openbtn").click(function () {//ボタンがクリックされたら
 	$(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
