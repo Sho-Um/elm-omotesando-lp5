@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--==============レイアウトを制御する独自のCSSを読み込み===============-->
 	<link href="css/reset.css" rel="stylesheet">
-	<link href="css/index.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -51,13 +52,20 @@
 
 
 	<main>
-        <div id="container">
-		<p>ローディング後、この画面が見えます。<br>※ロゴで使用したライブラリ<a href="https://maxwellito.github.io/vivus/" target="_blank">https://maxwellito.github.io/vivus/</a></p>
-        <!--/container--></div>
+		<h2>複数画像を並列に見せる</h2>
+		<ul class="slider">
+			<li><img src="img/gentlelase_pro.png" alt=""></li>
+			<li><img src="img/hair_removal.png" alt=""></li>
+			<li><img src="img/laser.png" alt=""></li>
+			<li><img src="img/gentlelase_pro.png" alt=""></li>
+			<li><img src="img/hair_removal.png" alt=""></li>
+			<li><img src="img/laser.png" alt=""></li>
+		<!--/slider--></ul>
 	</main>
 <!--==============JQuery読み込み===============-->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/index.js"></script>
 </body>
 </html>
