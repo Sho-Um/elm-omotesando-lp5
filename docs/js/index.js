@@ -14,3 +14,14 @@ $(window).on('load',function(){
 	$("#splash_logo").delay(3200).fadeOut('slow');//ロゴを1.5秒（1500ms）待機してからフェードアウト
         stroke.play();//SVGアニメーションの実行
 });
+
+
+$(window).on('load',function(){	
+    //=====ここからローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる
+    $("#splash").delay(50).fadeOut('slow',function(){//ローディングエリア（splashエリア）を0.05秒でフェードアウトする記述
+    
+        $('body').addClass('appear');//フェードアウト後bodyにappearクラス付与
+	
+    });
+    //=====ここまでローディングエリア（splashエリア）を1.5秒でフェードアウトした後に動かしたいJSをまとめる    
+});
